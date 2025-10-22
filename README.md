@@ -25,6 +25,6 @@ node index2.js   # File System
 node index3.js   # Servidor TCP
 
 <div align="center">
-Desenvolvido com 💚 e Node.js
+Desenvolvido com Node.js
 
 </div>
