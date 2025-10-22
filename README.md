@@ -2,7 +2,7 @@
 
 <br> <img src="https://nodejs.org/static/images/logo.svg" alt="Node.js Logo" width="200" height="200"> <br> <br></div>
 
-📋 Sobre o Projeto
+📋 
 Projeto de estudos em Node.js explorando servidores HTTP, TCP, operações com file system e streams.
 
 🚀 Tecnologias
@@ -20,9 +20,12 @@ cd SERVIDOR001
 npm install
 
 # Execute os exemplos
-node index.js    # Servidor HTTP
-node index2.js   # File System  
-node index3.js   # Servidor TCP
+node index.js    
+# Servidor HTTP
+node index2.js   
+# File System  
+node index3.js   
+# Servidor TCP
 
 <div align="center">
 Desenvolvido com Node.js
