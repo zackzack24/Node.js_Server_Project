@@ -1,30 +1,38 @@
-// Elementos para programação assíncrona 
+// Importa Sequelize e DataTypes do pacote sequelize
+const { Sequelize, DataTypes } = require('sequelize');
 
-// • Função assíncrona não bloqueia execução
-// • Palavras reservadas async e await
-// • Palavra reservada then e função de callback
-// • Retorno como Promise
+// Criação da intância do Sequelize para SQLite
+const sequelize = new Sequelize({
+  dialect: 'sqlite',            // Define o dialeto do banco como SQLite
+  storage: './database.sqlite'  // Define o arquivo onde os dados serão armazenados
+});
 
-const somar = async (a, b) => a + b;
+// Importa e inicializa o modelo Pessoa
+// A função require('./pessoa') retorna uma função que precisa receber
+// sequelize e DataTypes como parâmetros para retornar o modelo inicializado
+const Pessoa = require('./pessoa')(sequelize, DataTypes);
 
-const imprimir_soma = async (a, b) => {
-      let valor = await somar(a, b);
-      console.log(valor);
-      return "Processo Concluido";
+// Função assíncrona para inicializar o banco de dados
+async function initializeDatabase() {
+  try { // Testa a conexão com o banco de dados
+    await sequelize.authenticate();
+    console.log('Database connection established.');
+
+    // Sincroniza os modelos com o banco de dados
+    await sequelize.sync({ force: false }); // force: false - não recria as tabelas se já existirem
+    console.log('Database synced.');
+    
+    // Retorna os modelos e a instância do sequelize para uso em outros arquivos
+    return { Pessoa, sequelize };
+  } catch (error) {
+    console.error('Database initialization failed:', error); // Captura e exibe qualquer erro ocorrido durante a inicialização
+    throw error; // Propaga o erro para quem chamar esta função
+  }
 }
 
-imprimir_soma(1, 2).then(
-      (retorno) => console.log(retorno));
-
-const dividir = (a, b) => {
-      const promise = new Promise((resolve,
-            reject) => {
-            if (b == 0) { reject("Divisao por zero"); }
-            else { resolve(a / b); }
-      });
-      return promise;
-}
-for (let i = 2; i >= -2; i--)
-      dividir(10, i).then((x) => console.log(x))
-
-            .catch((error) => console.log(error));
+// Exporta as funções e modelos para uso em outros arquivos
+module.exports = {
+  initializeDatabase,  // Função para inicializar o banco
+  Pessoa,           // Modelo pessoa
+  sequelize     // Instância do Sequelize
+};
