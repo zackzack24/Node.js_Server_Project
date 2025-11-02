@@ -2,10 +2,10 @@
 
 <br> <img src="https://nodejs.org/static/images/logo.svg" alt="Node.js Logo" width="200" height="200"> <br> <br></div>
 
-📋 
+ 
 Projeto de estudos em Node.js explorando servidores HTTP, TCP, operações com file system e streams.
 
-🚀 Tecnologias
+ Tecnologias
 Node.js - Ambiente de execução JavaScript
 
 Módulos Nativos: http, net, fs, path
@@ -29,5 +29,5 @@ node index3.js
 
 <div align="center">
 Desenvolvido com Node.js
-
+Ainda em Desenvolvimento...
 </div>
