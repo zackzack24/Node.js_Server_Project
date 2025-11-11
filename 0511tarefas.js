@@ -1,0 +1,17 @@
+const express = require('express');
+const app = express();
+app.use(express.json());
+
+let tarefas = ["Isto é uma tarefa"];
+
+app.get('/api/tarefas', (req, res) => {
+    res.json(tarefas);
+    res.end();
+});
+
+app.post('/api/tarefas', (req, res) => {
+      tarefas.push({ tarefa: req.body.tarefa });
+      res.end();
+});
+
+app.listen(3000);
