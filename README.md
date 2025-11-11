@@ -1,8 +1,8 @@
 <div align="center">
+<br> <img src="https://nodejs.org/static/images/logo.svg" alt="Node.js Logo" width="200" height="200"> <br> <br> 
+</div>
 
-<br> <img src="https://nodejs.org/static/images/logo.svg" alt="Node.js Logo" width="200" height="200"> <br> <br></div>
-
- 
+<div position=fixed>  
 Projeto de estudos em Node.js explorando servidores HTTP, TCP, operações com file system e streams.
 
  Tecnologias
@@ -34,6 +34,7 @@ app.listen(3000, () =>{
 ```
 
 Visualização de uma requisição em SOAP
+
 ```
 <?xml version="1.0"?>
 <soap:Envelope 
@@ -51,6 +52,7 @@ Visualização de uma requisição em SOAP
 ```
 
 Veja a resposta dessa requisição
+
 ```
 <?xml version="1.0"?>
 <soap:Envelope 
@@ -68,12 +70,15 @@ Veja a resposta dessa requisição
 
 Visualização dos métodos HTTP
 
-| | | |
-|:---|:---:|:---:|
-| | | |
-| | | |
-| | | |
-| | | |
+| Método | Código | Descrição |
+|:------:|:------:|:----------|
+| GET |  Recupera dados do servidor |
+| POST |  Cria novo recurso |
+| PUT |  Atualiza recurso completamente |
+| PATCH |  Atualiza parcialmente recurso |
+| DELETE |  Remove recurso |
+| HEAD |  Obtém apenas cabeçalhos |
+| OPTIONS |  Mostra métodos disponíveis |
 
 Visualização de exemplos de ENDPOINTS e ROTAS da arquitetura REST
 
@@ -87,6 +92,8 @@ Visualização de exemplos de ENDPOINTS e ROTAS da arquitetura REST
 | /notas/:id     | PUT http://localhost:3000/notas/2       | Alteração da nota id 2, usando dados do corpo da requisição      |
 | /notas/:id     | DELETE http://localhost:3000/notas/1      | Remove a nota com id 1.      |
 | /notas/:id     | DELETE http://localhost:3000/notas/2      | Remove a nota com id 2.      |
+
+</div>
 
 <div align="center">
 # Clone o repositório
