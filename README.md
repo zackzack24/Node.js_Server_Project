@@ -66,7 +66,7 @@ Veja a resposta dessa requisição
     </soap:Body>
     
 </soap:Envelope>
-´´´
+```
 
 Visualização dos métodos HTTP
 
@@ -94,7 +94,6 @@ Visualização de exemplos de ENDPOINTS e ROTAS da arquitetura REST
 | /notas/:id     | DELETE http://localhost:3000/notas/1      | Remove a nota com id 1.      |
 | /notas/:id     | DELETE http://localhost:3000/notas/2      | Remove a nota com id 2.      |
 
-<div align="center">
 # Clone o repositório
 git clone https://github.com/zackzack24/Node.js_Server_Project.git
 
@@ -114,4 +113,4 @@ node index3.js
 
 Desenvolvido com Node.js <br/>
 Ainda em Desenvolvimento...
-</div>
+
