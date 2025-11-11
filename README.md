@@ -1,11 +1,10 @@
 <div align="center">
 <br> <img src="https://nodejs.org/static/images/logo.svg" alt="Node.js Logo" width="200" height="200"> <br> <br> 
 </div>
-
-<div position=fixed>  
+  
 Projeto de estudos em Node.js explorando servidores HTTP, TCP, operações com file system e streams.
 
- Tecnologias
+Tecnologias
 Node.js - Ambiente de execução JavaScript
 
 Módulos Nativos: http, net, fs, path
@@ -20,6 +19,7 @@ Visualização das Portas e protocolos
 |POP3|Post Office Protocol|995|
 
 Visualização de rota com EXPRESS no NODE.JS
+
 ```
 const express = require('express')
 const app = express()
@@ -80,6 +80,7 @@ Visualização dos métodos HTTP
 | HEAD |  Obtém apenas cabeçalhos |
 | OPTIONS |  Mostra métodos disponíveis |
 
+
 Visualização de exemplos de ENDPOINTS e ROTAS da arquitetura REST
 
 | Endpoint | Rota | Descrição |
@@ -92,8 +93,6 @@ Visualização de exemplos de ENDPOINTS e ROTAS da arquitetura REST
 | /notas/:id     | PUT http://localhost:3000/notas/2       | Alteração da nota id 2, usando dados do corpo da requisição      |
 | /notas/:id     | DELETE http://localhost:3000/notas/1      | Remove a nota com id 1.      |
 | /notas/:id     | DELETE http://localhost:3000/notas/2      | Remove a nota com id 2.      |
-
-</div>
 
 <div align="center">
 # Clone o repositório
@@ -112,7 +111,6 @@ node index2.js
 # File System  
 node index3.js   
 # Servidor TCP
-
 
 Desenvolvido com Node.js <br/>
 Ainda em Desenvolvimento...
