@@ -13,7 +13,7 @@ Módulos Nativos: http, net, fs, path
 Visualização de exemplos de ENDPOINTS e ROTAS da arquitetura REST
 
 | Endpoint | Rota | Descrição |
-| :---         |     :---:      |          ---: |
+| :---         |     :---:      |          :--- |
 | /notas   | GET http://localhost:3000/notas     | Consulta todas as notas existentes    |
 | /notas     | POST http://localhost:3000/notas       | Inclusão de uma nota, usando dados enviados no corpo      |
 | /notas/:id     | GET http://localhost:3000/notas/1       | Consulta da nota de id 1.      |
