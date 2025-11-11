@@ -10,12 +10,18 @@ Node.js - Ambiente de execução JavaScript
 
 Módulos Nativos: http, net, fs, path
 
+Visualização de exemplos de ENDPOINTS e ROTAS da arquitetura REST
 
-
-
-
-
-
+| Endpoint | Rota | Descrição |
+| :---         |     :---:      |          ---: |
+| /notas   | GET http://localhost:3000/notas     | Consulta todas as notas existentes    |
+| /notas     | POST http://localhost:3000/notas       | Inclusão de uma nota, usando dados enviados no corpo      |
+| /notas/:id     | GET http://localhost:3000/notas/1       | Consulta da nota de id 1.      |
+| /notas/:id     | GET http://localhost:3000/notas/2       | Consulta da nota de id 2.      |
+| /notas/:id     | PUT http://localhost:3000/notas/1       | Alteração da nota id 1, usando dados do corpo da requisição      |
+| /notas/:id     | PUT http://localhost:3000/notas/2       | Alteração da nota id 2, usando dados do corpo da requisição      |
+| /notas/:id     | DELETE http://localhost:3000/notas/1      | Remove a nota com id 1.      |
+| /notas/:id     | DELETE http://localhost:3000/notas/2      | Remove a nota com id 2.      |
 
 # Clone o repositório
 git clone https://github.com/zackzack24/Node.js_Server_Project.git
